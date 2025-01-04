@@ -15,7 +15,7 @@ class TestSearch(BaseFile):
 
 
     @allure.story("GSCE")
-    @allure.severity_level.CRITICAL
+    @allure.severity(allure.severity_level.CRITICAL)
     def test_click_product(self):
         homepage = HomePage(self.driver)
         homepage.click_product()
