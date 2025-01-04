@@ -18,6 +18,6 @@ class HomePage:
         time.sleep(5)
 
     def click_product(self):
-        self.driver.find_element(By.XPATH , "//a[text()='Tablet123']").click()
+        self.driver.find_element(By.XPATH , "//a[text()='Tablets']").click()
         time.sleep(5)
 
