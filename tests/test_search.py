@@ -13,8 +13,9 @@ class TestSearch(BaseFile):
         homepage.go_to_home_page()
         homepage.enter_product_into_search("HP")
 
-    @allure.severity("High")
+
     @allure.story("GSCE")
+    @allure.severity_level.CRITICAL
     def test_click_product(self):
         homepage = HomePage(self.driver)
         homepage.click_product()
